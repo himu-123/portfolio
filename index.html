@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+   
+   <div id="header">
+    <div class="container">
+        <nav>
+            <h1 class="logo">H<span>imanchal</span></h1>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p>Ethical Hacker</p>
+            <h1>Hi , I'm <span> Himanchal </span><br>Pradhan from india</h1>
+        </div>
+    </div>
+   </div>
+   <!-- -------------------about------------ -->
+
+   <div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="ai-generated-8659546_1280.jpg" alt="">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">
+                    About me
+                </h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, id! Qui quas illo, modi accusamus eaque corrupti quaerat iste numquam, adipisci obcaecati repudiandae. Numquam ad tempore non tenetur corrupti deleniti labore o unde! Ea neque dicta deserunt ad beatae distinctio fugiat, at, vero corrupti et fugit!</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skill</p>
+                    <p class="tab-links" onclick="opentab('experiance')">Experiance</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-content active-tab" id="skills">
+                    <ul>
+                        <li><span>Programing :</span><br>C,Java,Python,<br>JavaScript</li>
+                        <li><span>Technical Skill:</span><br>Ethical Hacking,<br>Cloud Computing</li>
+                        <li><span>Frontend:</span><br>HTML,CSS</li>
+                    </ul>
+                </div>
+                <div class="tab-content" id="experiance">
+                    <ul>
+                        <li><span>Fresher</span><br>Entry level</li>
+                       
+                    </ul>
+                </div>
+                <div class="tab-content" id="education">
+                    <ul>
+                        <li><span>BCA(Cloud Computing & Cyber Security):</span><br>From IIMT University Meerut</li>
+                        <li><span>XII(Commerce):</span><br>From Dashmesh Public School Ambikapur</li>
+                        <li><span>X</span><br>From D.A.V Mukhyamantri Public School Karanki</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div id="border"></div>
+   </div>
+   <!-- ----------------------portfolio----------- -->
+   <section id="portfolio">
+    <h2>Portfolio</h2>
+    <div class="projects">
+        <div class="project">
+            <img src="https://via.placeholder.com/300" alt="Project 1">
+            <h3>Project 1</h3>
+            <p>A brief description of the project.</p>
+        </div>
+        <div class="project">
+            <img src="https://via.placeholder.com/300" alt="Project 2">
+            <h3>Project 2</h3>
+            <p>A brief description of the project.</p>
+        </div>
+        <div class="project">
+            <img src="https://via.placeholder.com/300" alt="Project 3">
+            <h3>Project 3</h3>
+            <p>A brief description of the project.</p>
+        </div>
+    </div>
+</section>
+<section id="contact">
+    <h2>Contact</h2>
+    <p>If you'd like to work together or have any questions, please get in touch!</p>
+    <form>
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+</div>
+
+<footer class="footer">
+<p>&copy; 2024 My Portfolio. All rights reserved.</p>
+</footer>
+   <script>
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-content");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+
+    };
+   </script>
+</body>
+</html>
